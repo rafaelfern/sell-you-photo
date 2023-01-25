@@ -1,0 +1,20 @@
+.listContainer {
+	margin: 1.5rem auto;
+	width: 1120px;
+
+	h2 {
+		font-size: 1.6rem;
+		color: var(--blue-bell);
+	}
+	span {
+		font-size: 0.8rem;
+		margin-left: 3px;
+	}
+
+	.boxContent {
+		flex-wrap: wrap;
+		display: flex;
+		flex: 50%;
+		gap: 20px;
+	}
+}

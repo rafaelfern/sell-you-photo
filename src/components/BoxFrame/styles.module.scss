@@ -1,0 +1,65 @@
+.boxContainer {
+	width: 40%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+
+	background-color: var(--background-card);
+
+	.boxContent {
+		// margin: 9px;
+		margin: 0 9px;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+
+		h4 {
+			font-size: 0.8rem;
+			color: var(--gray-200);
+		}
+
+		span {
+			font-size: 0.7rem;
+			color: var(--gray-200);
+			width: 100%;
+			> span {
+				font-family: var(--font-inter);
+				font-weight: 600;
+			}
+		}
+
+		.installmentsContent {
+			color: var(--green-price);
+			// font-weight: bold;
+			margin-top: 5px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 0.7rem;
+
+			> span {
+				font-family: var(--font-inter);
+				font-weight: 600;
+				text-align: center;
+				font-size: 1.2rem;
+				color: var(--green-price);
+			}
+		}
+
+		.btnContent {
+			display: flex;
+			cursor: pointer;
+
+			a {
+				border-radius: 3px;
+				width: 100%;
+				text-align: center;
+				font-weight: bold;
+				color: var(--ghost-white);
+				background-color: var(--blue-bell);
+				font-size: 1rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
