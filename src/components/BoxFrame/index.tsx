@@ -3,7 +3,6 @@ import { Noto_Sans } from "@next/font/google";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
-// const NotoSans = Noto_Sans({ weight: "200", subsets: ["latin"] });
 const notoSans = Noto_Sans({
 	weight: "400",
 	variable: "--font-inter",
