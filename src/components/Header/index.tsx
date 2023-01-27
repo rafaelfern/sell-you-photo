@@ -8,7 +8,7 @@ import Link from "next/link";
 import ModalLogin from "../../components/ModalLogin";
 
 export default function Header() {
-    const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const [isNavExpanded /*setIsNavExpanded*/] = useState(false);
     const [modalLogin, setModalLogin] = useState(false);
     return (
         <header className={styles.headerContainer}>

@@ -8,7 +8,11 @@
         "start": "next start",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
-        "postinstall": "husky install"
+        "prepare": "husky install",
+        "lint-staged": "lint-staged"
+    },
+    "lint-staged": {
+      "*.tsx": ["yarn lint:fix"]
     },
     "dependencies": {
         "@next/font": "^13.1.2",
@@ -35,6 +39,7 @@
         "eslint-config-prettier": "^8.6.0",
         "eslint-plugin-prettier": "^4.2.1",
         "husky": "^8.0.3",
+        "lint-staged": "^13.1.0",
         "prettier": "^2.8.3"
     },
     "husky": {
