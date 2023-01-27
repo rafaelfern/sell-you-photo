@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint .",
-        "lint:fix": "eslint --fix ."
+        "lint:fix": "eslint --fix .",
+        "postinstall": "husky install"
     },
     "dependencies": {
         "@next/font": "^13.1.2",
@@ -38,7 +39,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "yarn run dev"
+            "pre-commit": "yarn run lint"
         }
     }
 }
