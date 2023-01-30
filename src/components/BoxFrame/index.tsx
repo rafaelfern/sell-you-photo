@@ -8,18 +8,20 @@ const notoSans = Noto_Sans({
     variable: "--font-inter",
     subsets: ["latin"],
 });
-interface IListItems {
-    listFrames: {
-        id: number;
-        seller: string;
-        price: string;
-        image: string;
-        title: string;
-        installments: string;
-    };
+interface IListItemsProps {
+    listFrames: [
+        {
+            id: number;
+            seller: string;
+            price: number;
+            image: string;
+            title: string;
+            installments: number;
+        },
+    ];
 }
 
-export default function index({ listFrames }: IListItems[]) {
+export default function index({ listFrames }: IListItemsProps) {
     const getPriceByInstallments = (value: number, installments: number) =>
         value / installments;
 
