@@ -9,16 +9,14 @@ const notoSans = Noto_Sans({
     subsets: ["latin"],
 });
 interface IListItemsProps {
-    listFrames: [
-        {
-            id: number;
-            seller: string;
-            price: number;
-            image: string;
-            title: string;
-            installments: number;
-        },
-    ];
+    listFrames: {
+        id: number;
+        seller: string;
+        price: number;
+        image: string;
+        title: string;
+        installments: number;
+    }[];
 }
 
 export default function index({ listFrames }: IListItemsProps) {
