@@ -64,7 +64,7 @@ export default function Header() {
                         <FiUser size={25} />
                         ENTRAR
                     </a>
-                    {modalLogin && <ModalLogin setModalLogin={setModalLogin} />}
+                    {modalLogin && <ModalLogin />}
                 </div>
             </div>
         </header>
